@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# React Calculator
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -8,12 +8,15 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## A basic React Calculator which van be used to perform basic mathematical calculations
 
+1. Add
+2. Subtract
+3. Divide
+4. Multiply
+5. Clear Screen
+6. Backspace
+7. Equals 
+8. Add/Subtract/Divide/Multiply Clubbed together
+9. Two symbols cannot be placed together
 
-
-1.Calculator layout
-2.digits + symbols
-3.Screen
-3.=-/* functialities
