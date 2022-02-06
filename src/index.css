@@ -1,25 +1,79 @@
-.result-screen{
-  height:60px;
-  width:300px;
-  border:1px solid black;
+.App{
+  display: block;
+  max-width:350px;
   position: relative;
-  font-size: x-large;
+  border:1px dashed black;
+  background-color: black;
+  /* justify-items: center; */
+  /* left:25%; */
+  margin:auto;
+  border-radius: 6px;
+  
+  
 
+}
+
+
+.result-screen{
+  height:100px;
+  width: 95%;
+  /* border:1px solid black; */
+  position:relative;
+  font-size: xx-large;
+  background-color: black;
+  color: white;
+  text-align: right;
+  border:none;
+  
+
+}
+
+
+
+input:focus,
+input:active,
+button:active,
+button:focus{
+  outline: none;
 }
 
 
 .keypad{
   border:1px solid black;
-  max-width: 300px;
+  width: 99%;
+  
   /* height: 800px; */
 }
 
 .button-grid{
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap:16px;
+  grid-auto-rows: minmax(65px,auto);
+  /* background-color: white; */
+  /* grid-gap:6px; */
 }
 
-.grid-item-0{
+.grid-item{
+  font-size: x-large;
+  border-radius: 6%;
+  border: none;
+  /* box-shadow: -5px -5px 12px white; */
+  margin: 5px;
+  background-color: rgb(49, 46, 46);
+  color: white;
+  height: 65px;
+  font-weight: bolder;
+  /* width: 65px; */
+  cursor: pointer;
+}
+
+
+
+.symbol{
+  background-color: rgb(248, 92, 19);
+  color: white;
+}
+
+.zero{
   grid-column:1/3;
 }

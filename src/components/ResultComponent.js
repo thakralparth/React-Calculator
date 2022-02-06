@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 
-class ResultComponent extends React.Component{
-    render(){
+const Result=({result})=>{
+    // const [result,setResult]=useState('Res');
         return(
             <div >
-                <div className="result-screen">Result </div>
+                <input className="result-screen" type="text" value={result}/>
             </div>
         )
     }
-}
 
-export default ResultComponent;
+
+export default Result;
