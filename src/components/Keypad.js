@@ -8,7 +8,7 @@ const Keypad=({handleClick})=>{
                     <div className="button-grid">
                         <button value="clear" onClick={handleClick} className="grid-item symbol">C</button>
                         <button value="backspace"onClick={handleClick} className="grid-item symbol">&larr;</button>
-                        <button value="%" onClick={handleClick} className="grid-item symbol">%</button>
+                        <button value="plusmin" onClick={handleClick} className="grid-item symbol">&plusmn;</button>
                         <button value="/" onClick={handleClick} className="grid-item symbol">&divide;</button>
 
                         <button value="7" onClick={handleClick} className="grid-item">7</button>

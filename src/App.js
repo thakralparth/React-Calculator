@@ -5,13 +5,14 @@ import { useState } from "react";
 function App() {
   const [result,setResult]=useState('');
 
+  const symbols = ['+', '-', '*', '/', '.'];
   const handleClick=(e)=>{
-    if(e.target.value == "clear"){
+    if(e.target.value === "clear"){
       setResult("");
     }else if(e.target.value==="backspace"){
       setResult(result.slice(0,result.length-1));
-    }else if(e.target.value==="%"){
-      setResult(result/100);
+    }else if(e.target.value==="plusmin"){
+      setResult(-result);
     }
     
     else if(e.target.value==="calculate"){
@@ -23,6 +24,11 @@ function App() {
       }
     }
     else{
+      if(symbols.includes(e.target.value) && result==='' ||
+      symbols.includes(e.target.value) && symbols.includes(result[result.length-1])
+        ){
+          return;
+        }
       setResult(result + e.target.value);
     }
    
